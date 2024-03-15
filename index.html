@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Pedido</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .envelope {
+            width: 80%;
+            /* Largura do envelope ajustada para 80% da largura da tela */
+            max-width: 400px;
+            /* Largura máxima do envelope para evitar que fique muito grande em telas maiores */
+            margin: 0 auto;
+            /* Centraliza o envelope na tela */
+            padding: 20px;
+            /* Espaçamento interno do envelope */
+            background-color: #f9c5c8;
+            border-radius: 10px;
+            /* Borda arredondada */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /* Sombra */
+        }
+
+        .words {
+            font-size: 14px;
+            /* Tamanho de fonte ajustado para 14 pixels */
+        }
+
+        .heart span {
+            font-size: 14px;
+            /* Tamanho de fonte ajustado para 14 pixels */
+        }
+    </style>
 
 </head>
+
 <body>
-<div class="envlope-wrapper">
-    <div id="envelope" class="close">
-        <div class="front flap"></div>
-        <div class="front pocket"></div>
-        <div class="letter">
-            <div class="words line1" style="font-size: 8px;">Sr Iza Siqueira</div>
-            <div class="words line2" style="font-size:10px;">Gostaria de lhe fazer um convite especial:</div>
-            <div class="words line3"></div>
-            <div class="words line4"></div>
-        </div>
-        <div class="hearts">
-            <div class="heart a1">
-                <span>Me da</span>
+    <div class="envlope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="words line1" style="font-size: 8px;">Sr Iza Siqueira</div>
+                <div class="words line2" style="font-size:10px;">Gostaria de lhe fazer um convite especial:</div>
+                <div class="words line3"></div>
+                <div class="words line4"></div>
             </div>
-            <div class="heart a2">
-                <span>esse cuzinho</span>
-            </div>
-            <div class="heart a3">
-                <span>gostoso?</span>
+            <div class="hearts">
+                <div class="heart a1">
+                    <span>Me da</span>
+                </div>
+                <div class="heart a2">
+                    <span>esse cuzinho</span>
+                </div>
+                <div class="heart a3">
+                    <span>gostoso?</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="reset">
-    <button id="open">Open</button>
-    <button id="reset">Reset</button>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./app.js"></script>
+    <div class="reset">
+        <button id="open">Open</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="./app.js"></script>
 
 </body>
+
 </html>
